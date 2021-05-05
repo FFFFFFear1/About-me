@@ -1,0 +1,140 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 26.25px;
+  background-color: #ffffff;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/*===================== Navbar ====================*/
+
+.navbar {
+  z-index: 3;
+  background-color: #eeeff1;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 90vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  &__logo {
+    width: 100px;
+    height: auto;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  &__links {
+    width: 70vh;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+
+/*===================== Title ====================*/
+
+.title {
+  background-color: #eeeff1;
+
+  top: 0;
+  right: 0;
+  left: 0;
+  height: auto;
+
+  &__container {
+    width: 60rem;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+
+    padding: 10rem 0;
+    margin: auto;
+
+    &__image {
+      width: 360px;
+      height: 240px;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+
+    &__discription {
+      width: 40rem;
+
+      &__title {
+        font-weight: bold;
+        font-size: 48px;
+      }
+
+      &__content {
+        width: 540px;
+        margin: 4rem 0;
+        color: #828282;
+      }
+
+      button {
+        background-color: #34547a;
+
+        width: 225px;
+        height: 65px;
+
+        font-size: 18px;
+        color: white;
+        border: 0px;
+      }
+    }
+  }
+}
+
+/*===================== About ====================*/
+
+.about {
+  margin: 7rem 0;
+  text-align: center;
+  height: auto;
+
+  &__content {
+    &__title {
+      font-weight: bold;
+      font-size: 32px;
+    }
+
+    &__description {
+      width: 540px;
+      color: #828282;
+      margin: auto;
+    }
+  }
+}
+
+/*===================== Statistics ====================*/
+
+.statistics {
+  background-color: #34547a;
+
+  width: 100%;
+  height: auto;
+}
