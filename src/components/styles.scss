@@ -234,3 +234,33 @@ img {
     -webkit-filter: brightness(100%);
   }
 }
+
+/*===================== Modal ====================*/
+
+.modal {
+  z-index: 4;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+  background-color: rgba(53, 53, 53, 0.397);
+}
+
+/*===================== Contact ====================*/
+
+.contact {
+  background-color: #eeeff1;
+
+  &__handler {
+    padding: 10rem 0;
+    width: 40rem;
+    margin: auto;
+
+    text-align: center;
+
+    &__title {
+    }
+  }
+}
