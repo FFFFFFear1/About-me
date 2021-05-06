@@ -13,6 +13,11 @@ body {
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 /*===================== Navbar ====================*/
 
 .navbar {
@@ -32,11 +37,6 @@ body {
   &__logo {
     width: 100px;
     height: auto;
-
-    img {
-      max-width: 100%;
-      max-height: 100%;
-    }
   }
 
   &__links {
@@ -74,11 +74,6 @@ body {
     &__image {
       width: 360px;
       height: 240px;
-
-      img {
-        max-width: 100%;
-        max-height: 100%;
-      }
     }
 
     &__discription {
@@ -137,4 +132,75 @@ body {
 
   width: 100%;
   height: auto;
+
+  &__content {
+    padding: 5rem 0;
+
+    width: 60rem;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+      color: white;
+
+      display: flex;
+      align-items: center;
+
+      &__image {
+        width: 50px;
+        height: 50px;
+        margin-right: 1rem;
+      }
+
+      &__parpams p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+/*===================== Skills ====================*/
+
+.skills {
+  width: 65rem;
+  margin: 5rem auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  &__handler {
+    width: 35rem;
+
+    &__title {
+      font-weight: bold;
+      font-size: 32px;
+    }
+
+    &__item {
+      color: #727272;
+      margin: 1.7rem 0;
+
+      &__title {
+        margin: 0.5rem;
+      }
+
+      &__value {
+        width: 450px;
+
+        display: grid;
+        grid-template-rows: 5px;
+
+        border-radius: 1rem;
+        overflow: hidden;
+      }
+    }
+  }
+
+  &__photo {
+    width: 350px;
+    height: auto;
+  }
 }
