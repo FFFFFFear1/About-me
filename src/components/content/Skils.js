@@ -34,7 +34,7 @@ export default function Skils() {
           <div
             className="skills__handler__item__value"
             style={{
-              gridTemplateColumns: "60% 40%",
+              gridTemplateColumns: "50% 50%",
             }}
           >
             <div style={{ backgroundColor: "#34547a" }}></div>
