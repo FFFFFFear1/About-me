@@ -42,18 +42,6 @@ export default function Skils() {
           </div>
         </div>
         <div className="skills__handler__item">
-          <p className="skills__handler__item__title">CSS</p>
-          <div
-            className="skills__handler__item__value"
-            style={{
-              gridTemplateColumns: "90% 10%",
-            }}
-          >
-            <div style={{ backgroundColor: "#34547a" }}></div>
-            <div style={{ backgroundColor: "#c4c4c4" }}></div>
-          </div>
-        </div>
-        <div className="skills__handler__item">
           <p className="skills__handler__item__title">Unity Engine</p>
           <div
             className="skills__handler__item__value"

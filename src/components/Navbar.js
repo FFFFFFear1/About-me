@@ -38,16 +38,6 @@ export default function Navbar() {
         >
           РАБОТЫ
         </Link>
-        {/* <Link
-          activeClass="active"
-          to="main"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
-        >
-          ПРОЦЕСС
-        </Link> */}
         <Link
           activeClass="active"
           to="contact"
