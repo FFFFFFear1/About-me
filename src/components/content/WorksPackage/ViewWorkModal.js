@@ -1,12 +1,30 @@
+import { useEffect, useCallback, useState } from "react";
+import Slider from "./Slider";
+
 export default function ViewWorkModal(props) {
+  const escFunction = useCallback((event) => {
+    if (event.keyCode === 27) {
+      console.log("asdas");
+      props.closeModal([]);
+    }
+  }, []);
+
+  useEffect(() => {
+    document.addEventListener("keydown", escFunction, false);
+
+    return () => {
+      document.removeEventListener("keydown", escFunction, false);
+    };
+  }, []);
+
   return (
     <div className="modal">
-      <div style={{ width: "200px", height: "auto" }}>
-        {props.modalData.images.map((image, index) => {
-          return <img key={index} src={image} alt="info"></img>;
-        })}
+      <div>
+        <Slider modalData={props.modalData} />
       </div>
-      <button onClick={() => props.closeModal(null)}>exit</button>
+      <button className="modal__btn" onClick={() => props.closeModal([])}>
+        ЗАКРЫТЬ
+      </button>
     </div>
   );
 }

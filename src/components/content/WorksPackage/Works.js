@@ -18,101 +18,189 @@ export default function Works() {
   let ShyHoleListImages = {};
   let SpaceXListImages = {};
   let FroggingOutListImages = {};
+
   const [openModal, setOpenModal] = useState(false);
-  const [modalData, setModalData] = useState({});
+  const [modalData, setModalData] = useState([]);
 
   function interactionModal(modalInfo) {
     setModalData(modalInfo);
     setOpenModal(!openModal);
   }
 
+  // useEffect(() => {
+  //   iTinderListImages["images"] = importAll(
+  //     require.context("../../../images/iTinder/", false, /\.(png|jpe?g|svg)$/)
+  //   );
+  //   CashStreamListImages["images"] = importAll(
+  //     require.context(
+  //       "../../../images/CashStream/",
+  //       false,
+  //       /\.(png|jpe?g|svg)$/
+  //     )
+  //   );
+  //   NuxtShopListImages["images"] = importAll(
+  //     require.context("../../../images/NuxtShop/", false, /\.(png|jpe?g|svg)$/)
+  //   );
+  //   TurtleListImages["images"] = importAll(
+  //     require.context("../../../images/Turtle/", false, /\.(png|jpe?g|svg)$/)
+  //   );
+  //   SkillboxListImages["images"] = importAll(
+  //     require.context("../../../images/Skillbox/", false, /\.(png|jpe?g|svg)$/)
+  //   );
+  //   ShyHoleListImages["images"] = importAll(
+  //     require.context("../../../images/ShyHole/", false, /\.(png|jpe?g|svg)$/)
+  //   );
+  //   SpaceXListImages["images"] = importAll(
+  //     require.context("../../../images/SpaceX/", false, /\.(png|jpe?g|svg)$/)
+  //   );
+  //   FroggingOutListImages["images"] = importAll(
+  //     require.context(
+  //       "../../../images/FroggingOut/",
+  //       false,
+  //       /\.(png|jpe?g|svg)$/
+  //     )
+  //   );
+
+  //   console.log(iTinderListImages);
+  // }, []);
+
   function importAll(r) {
     return r.keys().map(r);
   }
 
-  useEffect(() => {
-    iTinderListImages["images"] = importAll(
-      require.context("../../../images/iTinder/", false, /\.(png|jpe?g|svg)$/)
-    );
-    CashStreamListImages["images"] = importAll(
-      require.context(
-        "../../../images/CashStream/",
-        false,
-        /\.(png|jpe?g|svg)$/
-      )
-    );
-    NuxtShopListImages["images"] = importAll(
-      require.context("../../../images/NuxtShop/", false, /\.(png|jpe?g|svg)$/)
-    );
-    TurtleListImages["images"] = importAll(
-      require.context("../../../images/Turtle/", false, /\.(png|jpe?g|svg)$/)
-    );
-    SkillboxListImages["images"] = importAll(
-      require.context("../../../images/Skillbox/", false, /\.(png|jpe?g|svg)$/)
-    );
-    ShyHoleListImages["images"] = importAll(
-      require.context("../../../images/ShyHole/", false, /\.(png|jpe?g|svg)$/)
-    );
-    SpaceXListImages["images"] = importAll(
-      require.context("../../../images/SpaceX/", false, /\.(png|jpe?g|svg)$/)
-    );
-    FroggingOutListImages["images"] = importAll(
-      require.context(
-        "../../../images/FroggingOut/",
-        false,
-        /\.(png|jpe?g|svg)$/
-      )
-    );
-
-    console.log(iTinderListImages);
-  }, []);
-
   return (
-    <div id='works' className="works">
+    <div id="works" className="works">
       <div
-        onClick={() => interactionModal(iTinderListImages)}
+        onClick={() =>
+          interactionModal(
+            importAll(
+              require.context(
+                "../../../images/iTinder/",
+                false,
+                /\.(png|jpe?g|svg)$/
+              )
+            )
+          )
+        }
         className="works__item"
         style={{
           backgroundImage: `url(${iTinder})`,
         }}
       ></div>
       <div
+        onClick={() =>
+          interactionModal(
+            importAll(
+              require.context(
+                "../../../images/CashStream/",
+                false,
+                /\.(png|jpe?g|svg)$/
+              )
+            )
+          )
+        }
         className="works__item"
         style={{
           backgroundImage: `url(${CashStream})`,
         }}
       ></div>
       <div
+        onClick={() =>
+          interactionModal(
+            importAll(
+              require.context(
+                "../../../images/NuxtShop/",
+                false,
+                /\.(png|jpe?g|svg)$/
+              )
+            )
+          )
+        }
         className="works__item"
         style={{
           backgroundImage: `url(${NuxtShop})`,
         }}
       ></div>
       <div
+        onClick={() =>
+          interactionModal(
+            importAll(
+              require.context(
+                "../../../images/Turtle/",
+                false,
+                /\.(png|jpe?g|svg)$/
+              )
+            )
+          )
+        }
         className="works__item"
         style={{
           backgroundImage: `url(${Turtle})`,
         }}
       ></div>
       <div
+        onClick={() =>
+          interactionModal(
+            importAll(
+              require.context(
+                "../../../images/Skillbox/",
+                false,
+                /\.(png|jpe?g|svg)$/
+              )
+            )
+          )
+        }
         className="works__item"
         style={{
           backgroundImage: `url(${Skillbox})`,
         }}
       ></div>
       <div
+        onClick={() =>
+          interactionModal(
+            importAll(
+              require.context(
+                "../../../images/ShyHole/",
+                false,
+                /\.(png|jpe?g|svg)$/
+              )
+            )
+          )
+        }
         className="works__item"
         style={{
           backgroundImage: `url(${ShyHole})`,
         }}
       ></div>
       <div
+        onClick={() =>
+          interactionModal(
+            importAll(
+              require.context(
+                "../../../images/SpaceX/",
+                false,
+                /\.(png|jpe?g|svg)$/
+              )
+            )
+          )
+        }
         className="works__item"
         style={{
           backgroundImage: `url(${SpaceX})`,
         }}
       ></div>
       <div
+        onClick={() =>
+          interactionModal(
+            importAll(
+              require.context(
+                "../../../images/FroggingOut/",
+                false,
+                /\.(png|jpe?g|svg)$/
+              )
+            )
+          )
+        }
         className="works__item"
         style={{
           backgroundImage: `url(${FroggingOut})`,

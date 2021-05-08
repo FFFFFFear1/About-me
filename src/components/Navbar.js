@@ -9,6 +9,7 @@ export default function Navbar() {
       </div>
       <div className="navbar__links">
         <Link
+          style={{ cursor: "pointer" }}
           activeClass="active"
           to="main"
           spy={true}
@@ -19,6 +20,7 @@ export default function Navbar() {
           ГЛАВНАЯ
         </Link>
         <Link
+          style={{ cursor: "pointer" }}
           activeClass="active"
           to="about"
           spy={true}
@@ -29,21 +31,23 @@ export default function Navbar() {
           ОБ АВТОРЕ
         </Link>
         <Link
+          style={{ cursor: "pointer" }}
           activeClass="active"
           to="works"
           spy={true}
           smooth={true}
-          offset={-80}
+          offset={-150}
           duration={500}
         >
           РАБОТЫ
         </Link>
         <Link
+          style={{ cursor: "pointer" }}
           activeClass="active"
           to="contact"
           spy={true}
           smooth={true}
-          offset={-110}
+          offset={-100}
           duration={500}
         >
           КОНТАКТЫ
