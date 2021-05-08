@@ -68,7 +68,7 @@ export default function Works() {
   }, []);
 
   return (
-    <div className="works">
+    <div id='works' className="works">
       <div
         onClick={() => interactionModal(iTinderListImages)}
         className="works__item"

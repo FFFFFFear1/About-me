@@ -2,7 +2,7 @@ import pcImage from "../../images/pc.png";
 
 export default function Title() {
   return (
-    <div className="title">
+    <div id='main' className="title">
       <div className="title__container">
         <div className="title__container__image">
           <img src={pcImage} alt="pc_logo" />
