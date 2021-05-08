@@ -6,6 +6,7 @@ import Statistics from "./components/content/Statistics";
 import Skils from "./components/content/Skils";
 import Works from "./components/content/WorksPackage/Works";
 import ContactMe from "./components/content/ContactMe";
+import Footer from "./components/content/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Skils />
       <Works />
       <ContactMe />
+      <Footer />
     </div>
   );
 }
