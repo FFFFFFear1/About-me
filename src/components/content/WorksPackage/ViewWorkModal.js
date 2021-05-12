@@ -6,11 +6,15 @@ export default function ViewWorkModal(props) {
     if (event.keyCode === 27) {
       props.closeModal([]);
     }
-  });
+  }, []);
 
   useEffect(() => {
     document.addEventListener("keydown", escFunction, false);
-  });
+
+    return () => {
+      document.removeEventListener("keydown", escFunction, false);
+    };
+  }, []);
 
   return (
     <div className="modal">
