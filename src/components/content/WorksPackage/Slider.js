@@ -37,7 +37,7 @@ export default function Slider(params) {
               {index === current && (
                 <img
                   src={image.default}
-                  alt="photo"
+                  alt="slider_item"
                   className="slider__image"
                 />
               )}

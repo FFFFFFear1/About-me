@@ -6,7 +6,7 @@ import Skillbox from "../../../images/Skillbox/Title.png";
 import ShyHole from "../../../images/ShyHole/Title.png";
 import SpaceX from "../../../images/SpaceX/Title.png";
 import FroggingOut from "../../../images/FroggingOut/Title.png";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import ViewWorkModal from "./ViewWorkModal";
 
 export default function Works() {

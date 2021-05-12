@@ -1,4 +1,4 @@
-import { TextField, Input } from "@material-ui/core";
+import { TextField } from "@material-ui/core";
 
 export default function ContactMe() {
   return (
@@ -6,13 +6,12 @@ export default function ContactMe() {
       <div className="contact__handler">
         <div>
           <div className="contact__handler__title">
-            <p>Хотите веб-сайт?</p>
+            <p>Заинтересовали работы?</p>
           </div>
           <div className="contact__handler__description">
             <p>
-              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
-              вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
-              на латинице с начала XVI века.
+              Оставьте ваши контакты для связи и я в ближайшее время с вами
+              свяжусь.
             </p>
           </div>
         </div>

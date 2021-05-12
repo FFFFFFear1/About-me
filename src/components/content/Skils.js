@@ -67,7 +67,7 @@ export default function Skils() {
         </div>
       </div>
       <div className="skills__photo">
-        <img src={myPhoto} />
+        <img src={myPhoto} alt="myPhoto" />
       </div>
     </div>
   );
